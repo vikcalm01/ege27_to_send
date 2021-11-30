@@ -14,9 +14,18 @@ void min_sum_distance_eff()
     7) это кандидат на минимульаную пару
     8) один ход червяка закончен, повторяем
     **/
+
+    int n;
+    cin >> n;
+    vector<int> vector_num(4, 0); //4 потому что это дистанция между нашими числами
+    for (int i(0); i < 4; i++)
+        cin >> vector_num[i];
+    for (int i(0); i < 4; i++)
+        cout << vector_num[i];
 }
+
 int main()
 {
-    cout << "Hello world!";
+    min_sum_distance_eff();
     return 0;
 }

@@ -1,2 +1,7 @@
 *.layout
 *.cbp
+*.json
+/ege_27/build/Debug/outDebug
+*.o
+/ege_27/main.dSYM/Contents/Resources/DWARF/main
+*.plist

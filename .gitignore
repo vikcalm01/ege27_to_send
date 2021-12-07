@@ -6,3 +6,6 @@
 *.plist
 /main
 /main.dSYM/Contents/Resources/DWARF/main
+*.json
+/ege_27/build/Debug/outDebug
+/ege_27/main.dSYM/Contents/Resources/DWARF/main

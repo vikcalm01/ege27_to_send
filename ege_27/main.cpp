@@ -26,7 +26,7 @@ void sum_max_num()
                         if (numbers[i] > max_not_div_2)
                             max_not_div_2 = numbers[i];
             }
-    cout << max_not_div_2 << ' ' << max_div_2;
+    cout << max_not_div_2 + max_div_2;
 
 }
 

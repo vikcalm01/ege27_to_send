@@ -23,8 +23,26 @@ cin >> num[tail_ix] //it's a head now
 4. для каждого среза найти два максимума
 5. собрать суммы в каждом срезе, выбрать максимальную
 **/
-}
 
+
+    int n, min_num = 9999, min_sum = 8000;
+    cin >> n;
+    vector<int> vector_num(4, 0); //4 потому что это дистанция между нашими числами
+    for (int i(0); i < 4; i++)
+        cin >> vector_num[i];
+    for (int i = 4; i < n; ++i)
+    {
+        int tail = i % 4;
+
+        min_num = min(vector_num[tail], min_num);
+        // cout << vector_num[tail] << endl;
+        cin >> vector_num[tail];
+        min_sum = min((min_num + vector_num[tail]), min_sum);
+        
+    }
+    cout << min_sum;
+
+}
 
 int main()
 {

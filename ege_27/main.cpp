@@ -14,7 +14,10 @@ void B_test_course_173()
     cin >> n;
     vector<int> numbers(n, 0);
     for (int i(0); i < n; i++)
-        cin >> numbers[i];
+        {
+            cin >> numbers[i];
+            cout << numbers[i] << ' ';
+        }
 }
 int main()
 {

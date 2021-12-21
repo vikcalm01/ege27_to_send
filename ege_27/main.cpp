@@ -5,9 +5,9 @@ using namespace std;
 void A_course_173()
 {
     /**
-    1) ввод чисел
-    2) вывод чисел
-    3) вывод пар
+    +1) ввод чисел
+    +2) вывод чисел
+    +3) вывод пар
     4) вывод троек
     5) вывод подходящих троек
     6) подсчёт подходящих троек
@@ -17,8 +17,10 @@ void A_course_173()
     vector<int> numbers(n, 0);
     for (int i(0); i < n; i++)
         cin >> numbers[i];
+
     for (int i(0); i < n; i++)
-        cout << numbers[i] << ' ' ;
+        for (int j(i+1); j<n; j++)
+            cout << numbers[j]<<" "<<numbers[i]<< endl;
 
 }
 int main()

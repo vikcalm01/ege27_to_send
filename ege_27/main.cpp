@@ -8,9 +8,16 @@ void A_course_173()
     +1) ввод чисел
     +2) вывод чисел
     +3) вывод пар
-    4) вывод троек
+    +4) вывод троек
     5) вывод подходящих троек
     6) подсчёт подходящих троек
+6
+5
+4
+3
+2
+8
+7
     */
     int n(0);
     cin >> n;
@@ -20,7 +27,8 @@ void A_course_173()
 
     for (int i(0); i < n; i++)
         for (int j(i+1); j<n; j++)
-            cout << numbers[j]<<" "<<numbers[i]<< endl;
+            for (int k(j+1); k < n; ++k)
+            cout << numbers[i]<<" "<<numbers[j] << " "<<numbers[k] << endl;
 
 }
 int main()

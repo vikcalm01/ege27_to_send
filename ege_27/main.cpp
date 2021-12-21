@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
+
 void A_course_173()
 {
     /**
@@ -11,7 +12,11 @@ void A_course_173()
     5) вывод подходящих троек
     6) подсчёт подходящих троек
     */
-
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
 
 }
 int main()
